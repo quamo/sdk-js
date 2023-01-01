@@ -1,0 +1,25 @@
+{
+  "name": "@quamo/sdk",
+  "author": {
+    "name": "quamo",
+    "email": "56267325+t2kxxx@users.noreply.github.com",
+    "url": "https://github.com/t2kxxx"
+  },
+  "version": "1.0.0",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "lib/index.js",
+  "module": "esm/index.js",
+  "files": [
+    "lib",
+    "esm"
+  ],
+  "engines": {
+    "node": ">=10"
+  },
+  "dependencies": {
+    "tslib": "^2.4.0"
+  }
+}
