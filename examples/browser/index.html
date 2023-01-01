@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+    <title>Quamo seamless-app demo in Browser</title>
+    <link rel="icon" type="image/png" href="/favicon.ico" />
+
+    <style>
+      html,
+      body {
+        padding: 0;
+        margin: 0;
+        border-bottom: 2px solid #2e439e;
+      }
+
+      main {
+        text-align: center;
+        padding: 1em;
+        max-width: 320px;
+        margin: 0 auto;
+        background-color: #e3fdcd;
+        font-size: 1.6rem;
+      }
+
+      @media (min-width: 640px) {
+        main {
+          max-width: none;
+        }
+      }
+
+      h1 {
+        color: #2e439e;
+        font-size: 2.4em;
+        font-weight: 100;
+      }
+
+      h1 > span {
+        font-size: 1.2rem;
+        color: black;
+      }
+
+      div {
+        font-size: 1.4rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <h1>
+        シームレスフレームアプリ<br />
+        <span>ブラウザ ver.</span>
+      </h1>
+      <div>
+        シームレスフレームの動作を確認できます。<br />
+        表示しているブラウザのウィンドウ幅（横）をリサイズすると、埋め込まれているコンテンツの高さに合わせて、アプリケーションの表示領域（iframeの高さ）が動的に変わります。<br />
+      </div>
+    </main>
+
+    <script src="quamo-sdk-0.0.1.min.js"></script>
+    <script>
+      console.log(Quamo.version);
+      Quamo.Frame.observeElementHeight(document.body);
+    </script>
+  </body>
+</html>

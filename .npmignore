@@ -1,0 +1,8 @@
+examples/
+.github/
+test/
+package-lock.json
+src/
+umd/
+tsdx.config.js
+tsconfig.json
